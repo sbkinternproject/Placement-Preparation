@@ -1,4 +1,0 @@
-AllGroupedData=Group data All;
-TotaCount = foreach AllGroupedData Generate COUNT(data.CoffeeSolveBugs);
-GroupedData = Group data by CoffeeSolveBugs;
-EachCount= foreach GroupedData Generate group as SolveCategory, COUNT(data.CoffeeSolveBugs) as CountEachSolve;
